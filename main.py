@@ -23,7 +23,7 @@ nameUser = input("\tEscribe tu nombre/Nickname: ")
 
 #Personalizamos el juego, preguntando su nombre
 print(
-    "\nAmigo " + BLUE + nameUser.upper() + RESET +
+    "\nAmig@ " + BLUE + nameUser.upper() + RESET +
     ",si estás aquí es porque quieres poner a prueba tus conocimientos... Cada respuesta correcta tiene 10 pts, y cada incorrecta te restará 10 pts,..Diviértete! 😎\n"
 )
 
@@ -92,7 +92,8 @@ while iniciar_trivia == True:
         puntaje -= randint(0, 11)
 
         print(RED + "-------------------------------" + RESET)
-        print(RED + "|Casi bro, intenta de nuevo...|" + RESET)
+        print(RED + "|Casi " + nameUser.upper() + ", intenta de nuevo...|" +
+              RESET)
         print(RED + "-------------------------------" + RESET)
 
     print("\t\t\tTu puntaje actual es: ", BLUE + str(puntaje) + RESET)
@@ -189,7 +190,8 @@ while iniciar_trivia == True:
         puntaje -= randint(0, 11)
 
         print(RED + "-------------------------------" + RESET)
-        print(RED + "|Casi bro, intenta de nuevo...|" + RESET)
+        print(RED + "|Casi " + nameUser.upper() + ", intenta de nuevo...|" +
+              RESET)
         print(RED + "-------------------------------" + RESET)
 
     print("\t\t\tTu puntaje actual es: ", BLUE + str(puntaje) + RESET)
