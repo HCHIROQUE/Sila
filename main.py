@@ -19,7 +19,7 @@ print(BLUE + "Bienvendo a la trivia, sobre preguntas de la HISTORIA DEL PERÚ" +
       RESET)
 print(BLUE + "--------------------------------------------------------------" +
       RESET)
-nameUser = input("\tEscribe tu nombre: ")
+nameUser = input("\tEscribe tu nombre/Nickname: ")
 
 #Personalizamos el juego, preguntando su nombre
 print(
@@ -297,7 +297,7 @@ while iniciar_trivia == True:
           str(listaPuntajeFinal[6]), str(listaPuntajeFinal[16]),
           str(listaPuntajeFinal[17]) + RESET)
 
-    time.sleep(5)
+    time.sleep(3)
     print(MAGENTA + "\n\n En 3 ... " + RESET)
     time.sleep(4)
     print(GREEN + " 2 ... " + RESET)
@@ -313,7 +313,7 @@ while iniciar_trivia == True:
     #Mensaje de despedida
     print("\n\nGracias ", BLUE + nameUser.upper() + RESET,
           ", por jugar mi trivia. Obtuviste un total de ... ",
-          BLUE + str(puntajeRuletaFinal) + RESET, "puntos.")
+          BLUE + str(puntajeRuletaFinal) + RESET, "puntos.\n")
 
     lista_puntaje_por_intentos.append(puntajeRuletaFinal)
 
@@ -329,3 +329,4 @@ while iniciar_trivia == True:
               RED + " <3 " + RESET)
 
         iniciar_trivia = False
+#fin
